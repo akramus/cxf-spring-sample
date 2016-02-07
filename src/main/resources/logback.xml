@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+	<!-- le scan=true permet la prise en compte on-the-fly des modifications 
+		de ce fichier de conf -->
+
+
+
+	<!-- Le logger console -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}
+				[%file:%line] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<loggger name="fr.tlmcom.engine" level="DEBUG" additivity="false">
+		<appender-ref ref="STDOUT" />
+	</loggger>
+
+	<root level="DEBUG">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>
