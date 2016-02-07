@@ -1,3 +1,3 @@
-# jsf boostrap sample 2
-JSF 2 + BootStrap 
+# CXF (JAX-WS + JAX-RS)) + SPRING
+CXF 
 This is a sample webapp using CXF and SPRING
